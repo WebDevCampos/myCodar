@@ -1,0 +1,89 @@
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+.page-sections a {
+	font-weight: 700;
+	text-decoration: none;
+	color: rgb(59, 55, 55);
+}
+body {
+	margin: 0;
+}
+
+.logo {
+	font-size: 50px;
+}
+.logo-red {
+	color: #d6000d;
+}
+.btn-login {
+	background-color: #d6000d;
+	color: white !important;
+	padding: 5px 20px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.btn-budget {
+	background-color: #d6000d;
+	color: white !important;
+	padding: 5px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 300px;
+}
+
+.push {
+	font-size: 20px;
+	height: 100px;
+	margin-top: 10%;
+}
+.amazing-website {
+	font-size: 50px;
+
+	color: #d6000d;
+}
+
+.benefits-section {
+	margin: 10% auto;
+	width: 100%;
+}
+.benefits-list {
+	width: 300px;
+	border: 1px solid blue;
+	margin-top: 10%;
+	font-size: 20px;
+	align-self: baseline;
+}
+
+.benefits-check {
+	background-color: #d6000d;
+	font-size: 45px;
+	border-radius: 50%;
+}
+.benefits-section img {
+	width: 57%;
+	height: auto;
+	margin: 10% auto;
+}
+@media screen and (max-width: 700px) {
+	img {
+		width: 50%;
+	}
+	.push {
+		font-size: 12px;
+	}
+	.amazing-website {
+		font-size: 30px;
+
+		color: #d6000d;
+	}
+}
