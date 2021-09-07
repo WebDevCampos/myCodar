@@ -9,6 +9,22 @@ html {
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+
+input[type='text']::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+input[type='text']:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+input[type='text']::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
 .page-sections a {
 	font-weight: 700;
 	text-decoration: none;
@@ -17,7 +33,13 @@ html {
 body {
 	margin: 0;
 }
-
+a {
+	text-decoration: none !important;
+}
+.card {
+	width: 100%;
+	height: 150px;
+}
 .logo {
 	font-size: 50px;
 }
@@ -57,33 +79,81 @@ body {
 	width: 100%;
 }
 .benefits-list {
-	width: 300px;
-	border: 1px solid blue;
-	margin-top: 10%;
-	font-size: 20px;
-	align-self: baseline;
+	max-width: 300px;
+	top: 10%;
+
+	margin: 0 auto;
+	font-size: 18px;
 }
 
 .benefits-check {
 	background-color: #d6000d;
-	font-size: 45px;
+	font-size: 30px;
 	border-radius: 50%;
+	font-weight: 400;
 }
 .benefits-section img {
-	width: 57%;
+	width: 80%;
 	height: auto;
-	margin: 10% auto;
+	margin: 5% auto;
+}
+
+.btn-wecall {
+	background-color: #d6000d;
+	color: white !important;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	width: 100%;
+}
+.btn-wecall a {
+	color: white;
+}
+.input-call {
+	background-color: #aaa6a7;
+	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.amazing-website {
+		font-size: 30px;
+		margin: 0 10%;
+	}
 }
 @media screen and (max-width: 700px) {
 	img {
 		width: 50%;
 	}
+	.benefits-section img {
+		width: 90%;
+		height: auto;
+		margin: 10% auto;
+	}
+
 	.push {
 		font-size: 12px;
 	}
 	.amazing-website {
-		font-size: 30px;
+		font-size: 40px;
 
 		color: #d6000d;
+	}
+
+	.benefits-section img {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.benefits-section img {
+		width: 50%;
+	}
+	.benefits-list {
+		margin: 0;
+	}
+	.amazing-website {
+		font-size: 30px;
 	}
 }
