@@ -138,6 +138,10 @@ a {
 .icon {
 	color: red;
 }
+
+.client {
+	font-size: 24px;
+}
 @media screen and (max-width: 900px) {
 	.amazing-website {
 		font-size: 30px;
@@ -177,5 +181,34 @@ a {
 	}
 	.amazing-website {
 		font-size: 30px;
+	}
+	.photo-holder {
+		width: 50px;
+		height: 50px;
+	}
+	.statement {
+		font-size: 12px;
+	}
+	.client {
+		font-size: 12px;
+	}
+	.client__business {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.photo-holder {
+		width: 40px;
+		height: 40px;
+	}
+	.statement {
+		font-size: 13px;
+	}
+	.client {
+		font-size: 15px;
+	}
+	.client__business {
+		font-size: 10px;
 	}
 }
